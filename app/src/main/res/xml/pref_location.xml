@@ -1,0 +1,37 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<PreferenceCategory android:title="Home Location Info">-->
+        <EditTextPreference
+            android:title="Home Location Longitude"
+            android:key="homeLocationLongitude"
+            android:summary="What is your Home location longitude"
+            android:dialogTitle="Enter Home Location Longitude"
+            android:inputType="numberDecimal"
+            android:defaultValue="0"/>
+        <EditTextPreference
+            android:title="Home Location Latitude"
+            android:key="homeLocationLatitude"
+            android:summary="What is your Home location Latitude"
+            android:inputType="numberDecimal"
+            android:dialogTitle="Enter Home Location Latitude"
+            android:defaultValue="0"/>
+
+    <!--</PreferenceCategory>-->
+    <!--<PreferenceCategory android:title="Work Location Info">-->
+
+        <EditTextPreference
+            android:title="Work Location Longitude"
+            android:key="workLocationLongitude"
+            android:summary="What is your Work location longitude"
+            android:inputType="numberDecimal"
+            android:dialogTitle="Enter Home Location Longitude"
+            android:defaultValue="0"/>
+        <EditTextPreference
+            android:title="Work Location Latitude"
+            android:key="workLocationLatitude"
+            android:summary="What is your Work location Latitude"
+            android:inputType="numberDecimal"
+            android:dialogTitle="Enter Home Location Latitude"
+            android:defaultValue="0"/>
+    <!--</PreferenceCategory>-->
+</PreferenceScreen>
