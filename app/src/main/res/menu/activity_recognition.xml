@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.junglesoft.traffictracker.ActivityRecognitionActivity">
+    <item
+        android:id="@+id/menu_item_clearlog"
+        android:enabled="true"
+        android:title="@string/menu_item_clearlog"></item>
+    <item
+        android:id="@+id/menu_item_showlog"
+        android:enabled="true"
+        android:title="@string/menu_item_showlog"
+        android:visible="true"></item>
+
+</menu>

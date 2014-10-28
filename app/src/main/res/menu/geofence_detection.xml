@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.junglesoft.traffictracker.GeofenceDetectionActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings" />
+    <item
+        android:id="@+id/menu_item_clear_geofence1"
+        android:title="@string/menu_item_clear_geofence1"></item>
+    <item
+        android:id="@+id/menu_item_clear_geofence2"
+        android:title="@string/menu_item_clear_geofence2"></item>
+    <item
+        android:id="@+id/menu_item_clear_geofences"
+        android:title="@string/menu_item_clear_all_geofences"></item>
+    <item
+        android:id="@+id/menu_item_clear_geofence_history"
+        android:title="@string/menu_item_clear_geofence_history"></item>
+
+</menu>

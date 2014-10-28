@@ -26,7 +26,14 @@ public class MainActivity extends Activity {
     Button btnDelData;
     @InjectView(R.id.btnChart)
     Button btnViewChart;
-
+    @InjectView(R.id.btnMap)
+    Button btnViewMap;
+    @InjectView(R.id.btnLocation)
+    Button btnLocation;
+    @InjectView(R.id.btnGeofence)
+    Button btnGeofence;
+    @InjectView(R.id.btnActivityRecog)
+    Button btnActivityRecog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,16 +62,36 @@ public class MainActivity extends Activity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
         if (id == R.id.action_settings) {
-            //getFragmentManager().beginTransaction().replace(R.id.main_container, new UserPreferenceFragment()).commit();
+
             startActivity(new Intent(MainActivity.this, SettingsActivity.class));
             return true;
         }
         return super.onOptionsItemSelected(item);
     }
 
+    @OnClick(R.id.btnActivityRecog)
+    public void ButtonActRecogClick() {
+        startActivity(new Intent(MainActivity.this, ActivityRecognitionActivity.class));
+    }
+
+    @OnClick(R.id.btnGeofence)
+    public void ButtonGeofenceClick() {
+        startActivity(new Intent(MainActivity.this, GeofenceDetectionActivity.class));
+    }
+
     @OnClick(R.id.btnChart)
     public void ButtonViewChartClick() {
         startActivity(new Intent(MainActivity.this, ChartActivity.class));
+    }
+
+    @OnClick(R.id.btnMap)
+    public void ButtonViewMapClick() {
+        startActivity(new Intent(MainActivity.this, MapsActivity.class));
+    }
+
+    @OnClick(R.id.btnLocation)
+    public void ButtonLocationClick() {
+        startActivity(new Intent(MainActivity.this, GooglePlayServicesUtilActivity.class));
     }
 
     @OnClick(R.id.btnViewData)
